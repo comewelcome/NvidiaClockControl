@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=GPU Mode Intermédiaire
+Comment=Activer le mode Intermédiaire (200W)
+Exec=pkexec /home/yo/Desktop/code/nvidia/gpu-tuning.sh med
+Icon=battery-good # Ou une autre icône appropriée
+Path=/home/yo/Desktop/code/nvidia/
+Terminal=false
+Type=Application
+Categories=Utility;

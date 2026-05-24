@@ -1,0 +1,1 @@
+sudo cp /home/yo/Desktop/code/nvidia/gpu-mode-med.service /etc/systemd/system/gpu-mode-med.service && sudo systemctl daemon-reload && sudo systemctl enable gpu-mode-med.service && sudo systemctl start gpu-mode-med.service
