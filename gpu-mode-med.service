@@ -6,8 +6,7 @@ After=nvidia-persistenced.service
 Type=oneshot
 WorkingDirectory=/home/yo/Desktop/code/nvidia
 Environment="LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/local/cuda/lib64:/usr/local/cuda-13.0/targets/x86_64-linux/lib/stubs:/usr/local/cuda-12.9/targets/x86_64-linux/lib/stubs"
-ExecStart=/home/yo/Desktop/code/nvidia/gpu-tuning.sh med
-ExecStart=/home/yo/Desktop/code/nvidia/gpuconfig.sh med
+ExecStart=/bin/bash -c "/home/yo/Desktop/code/nvidia/gpu-tuning.sh med && sudo /home/yo/Desktop/code/nvidia/gpuconfig.sh med"
 
 [Install]
 WantedBy=multi-user.target

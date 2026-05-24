@@ -2,8 +2,8 @@
 Version=1.0
 Name=GPU Mode Eco
 Comment=Activer le mode Eco (100W)
-Exec=pkexec /home/yo/Desktop/code/nvidia/gpu-tuning.sh eco
-Icon=battery-low # Ou une autre icône appropriée
+Exec=pkexec /bin/bash -c "/home/yo/Desktop/code/nvidia/gpu-tuning.sh eco && sudo /home/yo/Desktop/code/nvidia/gpuconfig.sh eco"
+Icon=battery-low
 Path=/home/yo/Desktop/code/nvidia/
 Terminal=false
 Type=Application

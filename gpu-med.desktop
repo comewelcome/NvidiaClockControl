@@ -2,8 +2,8 @@
 Version=1.0
 Name=GPU Mode Intermédiaire
 Comment=Activer le mode Intermédiaire (200W)
-Exec=pkexec /home/yo/Desktop/code/nvidia/gpu-tuning.sh med
-Icon=battery-good # Ou une autre icône appropriée
+Exec=pkexec /bin/bash -c "/home/yo/Desktop/code/nvidia/gpu-tuning.sh med && sudo /home/yo/Desktop/code/nvidia/gpuconfig.sh med"
+Icon=battery-good
 Path=/home/yo/Desktop/code/nvidia/
 Terminal=false
 Type=Application

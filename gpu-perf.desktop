@@ -2,8 +2,8 @@
 Version=1.0
 Name=GPU Mode Performance
 Comment=Activer le mode Performance (300W)
-Exec=pkexec /home/yo/Desktop/code/nvidia/gpu-tuning.sh perf
-Icon=battery-full-charged # Ou une autre icône appropriée
+Exec=pkexec /bin/bash -c "/home/yo/Desktop/code/nvidia/gpu-tuning.sh perf && sudo /home/yo/Desktop/code/nvidia/gpuconfig.sh perf"
+Icon=battery-full-charged
 Path=/home/yo/Desktop/code/nvidia/
 Terminal=false
 Type=Application

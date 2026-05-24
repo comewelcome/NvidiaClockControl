@@ -1,1 +1,20 @@
-sudo cp /home/yo/Desktop/code/nvidia/gpu-mode-med.service /etc/systemd/system/gpu-mode-med.service && sudo systemctl daemon-reload && sudo systemctl enable gpu-mode-med.service && sudo systemctl start gpu-mode-med.service
+# Pour activer le mode Med au démarrage, utilisez le script d'installation :
+
+sudo ./install-gpu-mode-med.sh
+
+# Ou en ligne de commande (méthode manuelle) :
+sudo cp gpu-mode-med.service /etc/systemd/system/ && \
+sudo systemctl daemon-reload && \
+sudo systemctl enable gpu-mode-med.service && \
+sudo systemctl start gpu-mode-med.service
+
+# Pour arrêter temporairement :
+sudo systemctl stop gpu-mode-med.service
+
+# Pour le réactiver :
+sudo systemctl start gpu-mode-med.service
+
+# Pour désactiver définitivement :
+sudo systemctl disable gpu-mode-med.service
+sudo rm /etc/systemd/system/gpu-mode-med.service
+sudo systemctl daemon-reload
